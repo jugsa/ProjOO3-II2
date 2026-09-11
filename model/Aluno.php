@@ -76,8 +76,9 @@ class Aluno{
     }
 
     public function calcularPresenca(){
-        return $this->faltas * 100/80;
-    }
+        $frequencia = 80 - $this->faltas;
+        return $frequencia * 100 / 80;
+    } 
 
 
 
